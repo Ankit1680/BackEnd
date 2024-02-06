@@ -6,12 +6,18 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "server": "nodemon src/index.js"
+    "server": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "author": "Ankit Vishwakarma",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^3.0.3",
     "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.1.1"
   }
 }
